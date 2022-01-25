@@ -3,7 +3,7 @@ import { IMailProvider } from "../../providers/IMailProvider"
 import { IUserRepository } from "../../repositories/IUserRepository"
 import { CreateUserDTO } from "./createUserDto"
 
-export class createUserUseCase {
+export class CreateUserUseCase {
 	constructor(private usersRepository: IUserRepository, private mailProvider: IMailProvider) {}
 
 	async execute(data: CreateUserDTO) {

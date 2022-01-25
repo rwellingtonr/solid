@@ -1,9 +1,9 @@
 /* What this Controller does... */
 import { Request, Response } from "express"
-import { createUserUseCase } from "./createUserUseCase"
+import { CreateUserUseCase } from "./createUserUseCase"
 
-class createUserController {
-	constructor(private createUserUseCase: createUserUseCase) {}
+export class CreateUserController {
+	constructor(private createUserUseCase: CreateUserUseCase) {}
 
 	async handle(req: Request, res: Response): Promise<Response> {
 		try {
@@ -17,4 +17,3 @@ class createUserController {
 		}
 	}
 }
-export { createUserController }
